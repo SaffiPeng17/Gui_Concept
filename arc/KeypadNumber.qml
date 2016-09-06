@@ -5,8 +5,9 @@ Image{
     source: "img/background.png"
 
     property string title_text: ""
+    property string typetext: ""
 
-    signal onOKClicked()
+    signal onOKClicked(string typetext)
 
     function gerEntry() { return entry_text.text }
 
@@ -37,41 +38,35 @@ Image{
 
     Column{
         id: input_line
-        width: parent.width*0.75
-        spacing: 8
-        anchors.top: parent.top; anchors.topMargin: 15
-        anchors.left: parent.left; anchors.leftMargin: 5
+        spacing: 10
+        anchors.left: parent.left; anchors.leftMargin: 10
+        anchors.verticalCenter: parent.verticalCenter
 
         Text{
             text: title_text
             color: "black"
             font.pixelSize: 22
         }
+        Image{
+            id: inputBar
+            source: "img/input_bar.png"
 
-        Row{
-            spacing: 20
-
-            Image{
-                id: inputBar
-                source: "img/input_bar.png"
-
-                TextInput{
-                    id: entry_text
-                    width: parent.width*0.95
-                    text: ""
-                    font.pixelSize: 22
-                    maximumLength: 15  //Max text length of entry
-                    activeFocusOnPress: false
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+            TextInput{
+                id: entry_text
+                width: parent.width*0.95
+                text: ""
+                font.pixelSize: 22
+                maximumLength: 15  //Max text length of entry
+                activeFocusOnPress: false
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
             }
-            Button{
-                img_normal: "img/keypad_ok_normal.png"
-                img_press:  "img/keypad_ok_press.png"
-                anchors.verticalCenter: inputBar.verticalCenter
-                onClicked: onOKClicked()
-            }
+        }
+        Button{
+            img_normal: "img/keypad_ok_normal.png"
+            img_press:  "img/keypad_ok_press.png"
+            anchors.right: inputBar.right
+            onClicked: onOKClicked(entry_text.text)
         }
     }
 
@@ -79,12 +74,12 @@ Image{
         width: keypad_19.width
         height: keypad_19.height+keypad_0d.height+keypad_19.spacing
         color: "transparent"
-        anchors.top: input_line.bottom; anchors.topMargin: 20
-        anchors.left: parent.left; anchors.leftMargin: 5
+        anchors.left: parent.left; anchors.leftMargin: 10
+        anchors.verticalCenter: parent.verticalCenter
 
         Grid{
             id: keypad_19
-            rows: 3; columns: 3; spacing: 5
+            rows: 3; columns: 3; spacing: 8
 
             Button{
                 img_normal: "img/number_1.png"
@@ -134,8 +129,8 @@ Image{
         } //Grid END
         Row{
             id: keypad_0d
-            spacing: 5
-            anchors.top: keypad_19.bottom; anchors.topMargin: 5
+            spacing: 8
+            anchors.top: keypad_19.bottom; anchors.topMargin: 8
 
             Button{
                 img_normal: "Image/number_0.png"

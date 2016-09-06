@@ -5,13 +5,13 @@ Image{
     source: "img/background.png"
 
     property string title_text: ""
+    property string typetext: ""
 
     property double tmrIn_SwitchText: 1000
     property double opacity_press: 0.7
     property double opacity_release: 1
 
-    signal onOKClicked()
-    signal onCancelClicked()
+    signal onOKClicked(string typetext)
 
     function gerEntry() { return entry_text.text }
 
@@ -88,7 +88,7 @@ Image{
                 img_normal: "img/keypad_ok_normal.png"
                 img_press:  "img/keypad_ok_press.png"
                 anchors.verticalCenter: inputBar.verticalCenter
-                onClicked: onOKClicked()
+                onClicked: onOKClicked(entry_text.text)
             }
         }
     }
