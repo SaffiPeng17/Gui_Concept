@@ -6,7 +6,7 @@ Image{
 
     property string cfm_text: ""
     property int    cfm_fontSize: 30
-    property string cfm_fontColor: "black"
+    property color  cfm_fontColor: "black"
 
     signal onselected(bool select)
 

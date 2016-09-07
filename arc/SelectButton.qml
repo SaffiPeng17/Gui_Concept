@@ -8,7 +8,7 @@ Image{
     property string img_press: ""
     property string btn_text: ""
     property int    btn_fontsize: 30
-    property string btn_fontcolor: "black"
+    property color  btn_fontcolor: "black"
     property bool   btn_enable: true
 
     property string pj_path: "file://project1/img/"

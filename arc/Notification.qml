@@ -6,7 +6,7 @@ Image{
 
     property string notify_text: ""
     property int    notify_fontSize: 30
-    property string notify_fontColor: "black"
+    property color  notify_fontColor: "black"
 
     signal onOKClicked()
 

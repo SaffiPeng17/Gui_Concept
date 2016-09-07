@@ -5,7 +5,7 @@ Image{
     source: "img/background.png"
 
     property string err_text: ""
-    property string err_fontColor: "Red"
+    property color  err_fontColor: "Red"
     property int    err_fontSize: 30
 
     signal onOKClicked()

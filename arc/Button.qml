@@ -8,7 +8,7 @@ Image{
     property string img_press: ""
     property string btn_text: ""
     property int    btn_fontSize: 30
-    property string btn_fontColor: "black"
+    property color  btn_fontColor: "black"
     property bool   btn_enable: true
 
     signal onClicked()
