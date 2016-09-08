@@ -4,7 +4,7 @@
 
 ## Class Define
 ###§ Button §
-![Button](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/cButton.png)
+![Button](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/cButton.png)
 <br>
 
 ###Attributes intro.
@@ -17,7 +17,7 @@ __`btn_enable: bool`__ &#8194;True is turn on Button event; False is turn off Bu
 <br><br>
 
 ###§ PageTitle §
-![Title](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/cPageTitle.png)
+![Title](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/cPageTitle.png)
 <br>
 
 ###Attributes intro.
@@ -25,7 +25,7 @@ __`title_text: string`__ &#8194;Title Text displays on the top of page usually.
 <br><br>
 
 ###§ TwoOptions §
-![2 Options](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/cOptions.png)
+![2 Options](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/cOptions.png)
 <br>
 
 ###Attributes intro.
@@ -36,7 +36,7 @@ __`opt_fontSize: int`__ &#8194;Set font size for Option Text. Default font size 
 <br><br>
 
 ###§ Confirm §
-![Cfm](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/cConfirm.png)
+![Cfm](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/cConfirm.png)
 <br>
 
 ###Attributes intro.
@@ -46,7 +46,7 @@ __`cfm_fontColor: color`__ &#8194;Set font color for Confirm Text. Default color
 <br><br>
 
 ###§ Notification §
-![Notify](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/cNotify.png)
+![Notify](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/cNotify.png)
 <br>
 
 ###Attributes intro.
@@ -56,7 +56,7 @@ __`notify_fontColor: color`__ &#8194;Set font color for Notify Text. Default col
 <br><br>
 
 ###§ KeypadAlphabet §
-![Keypad_alphabet](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/cKeypad_alphabet.png)
+![Keypad_alphabet](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/cKeypad_alphabet.png)
 <br>
 
 ###Attributes intro.
@@ -64,7 +64,7 @@ __`title_text: string`__ &#8194;Title Text is the purpose of input.
 <br><br>
 
 ###§ KeypadAlphabet §
-![Keypad_alphabet](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/cKeypad_alphabet.png)
+![Keypad_alphabet](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/cKeypad_alphabet.png)
 <br>
 
 ###Attributes intro.
@@ -72,7 +72,7 @@ __`title_text: string`__ &#8194;Title Text is directive for input.
 <br><br>
 
 ###§ KeypadNumber §
-![Keypad_number](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/cKeypad_num.png)
+![Keypad_number](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/cKeypad_num.png)
 <br>
 
 ###Attributes intro.
@@ -80,4 +80,4 @@ __`title_text: string`__ &#8194;Title Text is directive for input.
 <br><br>
 
 ## Sample Flow
-![Flow](https://github.com/SaffiPeng17/gui_architecture/blob/master/arc/intro_img/flow.png)
+![Flow](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/flow.png)
