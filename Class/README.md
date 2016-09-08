@@ -92,7 +92,7 @@ _Collect all strings used in project. It's easier to find & modify strings. The 
 
 3. Subtitute string into Gui Item by String ID.<br>
  __`Text{ text: strs.id_sample }`__<br>
-<br><br>
+<br>
 
 ## Sample Flow
 ![Flow](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/flow.png)
