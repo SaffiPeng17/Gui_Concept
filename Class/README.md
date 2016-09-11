@@ -79,5 +79,20 @@ __`title_text: string`__ &#8194;Title Text is directive for input.
 __`title_text: string`__ &#8194;Title Text is directive for input.
 <br><br>
 
+###§ String List §
+_Collect all strings used in project. It's easier to find & modify strings. The String List also is considered to a Class._
+<br>
+
+###How to use
+1. Add string in String List Class and define an ID for it.<br>
+ __`property string id_sample: qsTr("Sample : ")`__<br>
+
+2. Define String List Class in main.<br>
+ __`Strings{ id: strs }`__<br>
+
+3. Subtitute string into Gui Item by String ID.<br>
+ __`Text{ text: strs.id_sample }`__<br>
+<br>
+
 ## Sample Flow
 ![Flow](https://github.com/SaffiPeng17/Gui_Concept/blob/master/Class/intro_img/flow.png)
