@@ -3,5 +3,15 @@
 <br>
 
 ## The Functions
-###§ create_tables() §
+### create_tables()
+*For create Tables into Databas.*<br>
+#### 1. Define Table names & Schemas as Array. And follow the format like:<br>
+#### Define Table names:
+    property variant table_list: ["EmployeeTable", "DepartmentTable"]
+#### Define Schemas:    
+    property variant employee_schema: ["e_ID", "e_name", "e_department", "e_title", "e_seniority"]
+    property variant department_schema: ["d_ID", "d_name", "d_position"]
+#### Group Schemas:   
+    property variant schema_list: [employee_schema, department_schema]
+
 <br>
