@@ -1,7 +1,7 @@
 import QtQuick 2.0
 
 Item{
-    id: database_api
+    id: database_communicate
 
 /***********************************************************/
 /*          Data Model: Database define                    */
@@ -73,8 +73,13 @@ Item{
 /***********************************************************/
     function create_tables()
     {
-        sql("CREATE TABLE IF NOT EXISTS EmployeeTable(index_code INTEGER PRIMARY KEY AUTOINCREMENT,e_ID,e_name,e_department,e_title,e_seniority);")
-        sql("CREATE TABLE IF NOT EXISTS DepartmentTable(index_code INTEGER NOT NULL,d_ID,d_name,d_position);");
+        var add_schemas = ""
+
+        for(var i = 0; i < table_list.length; i++)
+        {
+            add_schemas = (isArray(schema_list[i]))? schema_list[i].toString() : schema_list[i]
+            sql("CREATE TABLE IF NOT EXISTS '"+table_list[i]+"'('"+add_schemas+"');")
+        }
     }
 //-----------------------------------------------------------
     function getColumnsofTable(table)

@@ -5,9 +5,9 @@ Item{
     id: mainpage
     width: 800; height: 480
 
-    DB_API{ id: dbapi }
+    DB_Comm{ id: db_comm }
 
     Text{
-        text: dbapi.create_tables()
+        text: db_comm.create_tables()
     }
 }
